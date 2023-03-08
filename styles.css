@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+  height: 100%;
+}
+
+img {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.75rem;
+}
+
+.sedan-card {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2rem 3.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.suv-card {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem 3.5rem;
+}
+
+.luxury-card {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2rem 3.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.learn-more-button {
+  color: #000;
+  background-color: hsl(0, 0%, 95%);
+  mix-blend-mode: lighten;
+  text-decoration: none;
+  margin: 1rem 0;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+}
+
+.learn-more-button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    height: 100%;
+  }
+  img {
+    margin-top: 2rem;
+  }
+  .container {
+    flex-direction: row;
+    max-height: 550px;
+    max-width: 950px;
+  }
+
+  .sedan-card {
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+  }
+
+  .luxury-card {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .learn-more-button {
+    margin-top: 7rem;
+  }
+}
