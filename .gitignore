@@ -15,5 +15,6 @@
 .DS_Store
 .prettierignore
 
-# Ignore all markdown files, for now
-*.md
+# Ignore certain markdown files that aren't needed
+README-info.md
+style-guide.md
